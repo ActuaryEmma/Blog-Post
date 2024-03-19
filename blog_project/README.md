@@ -16,3 +16,6 @@ Create sql table
     blog/migrations/0001_initial.py
         - Create model Post
 (venv) emma@emma:~/ALX/backend/Django/blog_project$ python manage.py sqlmigrate blog 0001
+
+Query Data set
+![alt text](image.png)
