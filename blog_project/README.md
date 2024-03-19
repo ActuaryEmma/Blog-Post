@@ -2,7 +2,7 @@ Create a Django app
 Version of Django : python -m django --version
 createing a project : django-admin startproject blog_project
 run app: python manage.py runserver
-Create blog app within blog_project app : python manage.py startapp blog
+Create blog app within blog_project app : python manage.py startapp blog, python manage.py startapp users
 
 
 Create a super user in django

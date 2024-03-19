@@ -32,12 +32,14 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'blog_project.wsgi.application'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 # Database
