@@ -19,3 +19,21 @@ Create sql table
 
 Query Data set
 ![alt text](image.png)
+
+
+
+****************************************************
+Deploy to Heroku
+- pip install gunicorn django-heroku
+- Create runtime.txt, Procfile, pip freeze > requirements.txt
+- Settings.py add : import django_heroku
+                    import dj_database_url
+
+                    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+                    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+                    django_heroku.settings(locals())
+
+                    ALLOWED_HOSTS = ['*']
+
+- heroku login
+- heroku create exploreke
